@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill Your Details</title>
+    <link rel="icon" href="./files/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="register.js"></script>
+    <script src="hello.js"></script>
+</head>
+<body class="register-body">
+
+    <nav>
+        <a href="./index.html" style="margin-left: 60px;"><img src="./files/logo.png" class="logo" alt="Logo" title="FirstFlight Travels"></a>
+
+        <ul class="navbar">
+            <li>
+                <a href="./index.html">Home</a>
+                <a href="./locations.html">Locations</a>
+                <a href="./index.html#package">Packages</a>
+                <a href="./about.html">About Us</a>
+                <a href="./contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="registration">
+        <div class="register-form">
+    <h1>Fill your <span>Details</span></h1>
+    <form>
+        <input type="text" name="myname1" placeholder="Name" id="name" required>
+        <div style="margin-bottom: 20px;" class="err1" id="name_err"></div>
+
+        <input type="email" name="myemail" placeholder="Email-Id" id="myemail" required>
+        <div style="margin-bottom: 20px;" class="err1" id="email_err"></div>
+
+        <input type="tel" name="myphone" placeholder="Phone No." id="phonenum" required>
+        <div style="margin-bottom: 20px;" class="err1" id="phone_err"></div>
+
+        <input type="number" name="myage" placeholder="Age" id="myage" required>
+        <div style="margin-bottom: 20px;" class="err1" id="age_err"></div>
+
+        <h4>Gender</h4>
+        <input type="radio" name="mygender" required> Male &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="radio" name="mygender"> Female
+        <div style="margin-bottom: 20px;" class="err1" id="gender_err"></div>
+
+        <h4>Departure</h4>
+        <input type="datetime-local" name="departuredate" required>
+        <div style="margin-bottom: 20px;" class="err1" id="departure_err"></div>
+
+        <h4>Return</h4>
+        <input type="datetime-local" name="returndate" required>
+        <div style="margin-bottom: 20px;" class="err1" id="return_err"></div>
+
+        <h4>Travel Destination</h4>
+        <input type="checkbox" name="td" > Kashmir &nbsp; &nbsp; &nbsp;
+        <input type="checkbox" name="td" > Istanbul &nbsp; &nbsp; &nbsp;
+        <input type="checkbox" name="td" > Paris &nbsp; &nbsp; &nbsp;
+        <input type="checkbox" name="td" > Bali &nbsp; &nbsp; &nbsp;
+        <input type="checkbox" name="td" > Dubai &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="checkbox" name="td" > Geneva &nbsp; &nbsp; &nbsp; 
+        <input type="checkbox" name="td" > Port Blair &nbsp; &nbsp; &nbsp;
+        <input type="checkbox" name="td" > Rome &nbsp; &nbsp; &nbsp;
+        <div style="margin-bottom: 20px;" class="err1" id="locations_err"></div>
+
+        <h4>Package</h4>
+        <input type="radio" name="locations"  required> Bronze &nbsp; &nbsp; &nbsp;
+        <input type="radio" name="locations" > Silver &nbsp; &nbsp; &nbsp;
+        <input type="radio" name="locations" > Gold &nbsp; &nbsp; &nbsp;
+        <input type="radio" name="locations" > Platinum &nbsp; &nbsp; &nbsp;
+        <div style="margin-bottom: 20px;" class="err1" id="package_err"></div>
+
+        <input type="checkbox" name="t&c" id="termsandconditions" checked required> I accept the Terms & Conditions.
+        <div style="margin-bottom: 20px;" class="err1" id="terms_err"></div>
+
+        <br> <br>
+        
+        <input type="button" value="Submit" class="submitbtn" onclick="validateform()">
+    </form>
+
+        </div>
+    </section>
+
+<!-- Footer -->
+
+<section class="footer">
+    <div class="foot">
+        <div class="footer-content">
+            
+            <div class="footlinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./register.html">Register</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4>Connect</h4>
+                <div class="social">
+                    <a href="https://www.instagram.com/_andy_210904?igsh=MTFoOHNtemxxY2l4OA==" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://x.com/AdityaDhane007?t=p6ESmv3gp_OD-BvmVgDbzw&s=09" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.linkedin.com/in/aditya-dhane-053853252/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://www.youtube.com/channel/UC8Ua5jjSMxgnoG9uGowyelQ" target="_blank"><i class='bx bxl-youtube' ></i></a>
+                    <a href="https://github.com/Andy210904" target="_blank"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="end">
+        <p>Copyright © 2022 Firstflight Travels All Rights Reserved.<br>Website developed by: Aditya Dhane and Divyanshu Kumar</p>
+    </div>
+</section>
+
+<!-- Javascript -->
+
+
+
+</body>
+</html>
